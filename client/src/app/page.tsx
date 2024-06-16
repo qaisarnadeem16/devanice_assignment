@@ -1,18 +1,20 @@
-
 "use client"
 import React, { useEffect } from "react";
-import { useRouter } from "next/router";
 import Recruitment from "./(dashboard)/recruitment/page";
+import { useRouter } from "next/navigation";
 
 const Home = () => {
   const router = useRouter();
 
   useEffect(() => {
     // Redirect to the Recruitment page when the Home component mounts
-    router.push("/dashboard/recruitment");
+    router.push("/recruitment");
   }, []);
-
-  return null; // Since this component is only for redirecting, return null
+  return (
+    <>
+      <h2 className="text-xl p-5 ">Home Page</h2>
+    </>
+  );
 };
 
 export default Home;
