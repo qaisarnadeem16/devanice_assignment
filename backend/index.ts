@@ -16,7 +16,7 @@ const app = express();
 //middlewares
 app.use(
   cors({
-    origin: "http://localhost:3000" || "https://devanics-assignment.vercel.app",
+    origin: ["http://localhost:3000", "https://devanics-assignment.vercel.app"],
     credentials: true,
   })
 );
