@@ -33,8 +33,8 @@ const RecurimentSection = () => {
                 <div className=" bg-white relative rounded-lg flex items-center flex-wrap gap-5 justify-between px-5">
                     <div className="min-w-3 min-h-full absolute left-0 top-0 rounded-tl-lg bg-primary"></div>
                     <div className=" px-5 min-h-full relative flex  gap-5">
-                        <button className={`text-gray text-lg font-medium ${archive ? 'text-gray' : 'text-black'}`} onClick={() => setArchive(false)}>Active</button>
-                        <button className={`text-gray text-lg font-medium ${archive ? 'text-black' : 'text-grey'}`} onClick={() => setArchive(true)}>Archive</button>
+                        <button className={`text-gray text-lg font-medium pb-3 ${!archive ? 'text-primary border-b-2 ' : 'text-gray'}`} onClick={() => setArchive(false)}>Active</button>
+                        <button className={`text-gray text-lg font-medium pb-3 ${archive ? 'text-primary border-b-2' : 'text-gray'}`} onClick={() => setArchive(true)}>Archive</button>
                     </div>
                     <div className="relative flex justify-end items-center">
                         <Link href="/createProfile" type="submit" className="py-3 right-5 absolute px-5 w-40 rounded bg-green text-base text-white font-medium">
